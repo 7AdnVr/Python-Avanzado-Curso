@@ -40,8 +40,8 @@ class EstudianteNota(Estudiante):
     def estudiar(self):
         print("Estoy estudiando para mejorar mi nota.")
 
-maria = EstudianteDeportista(16, 12345678, "4to año", "voleibol")
-pedro = EstudianteNota(15, 87654321, "3er año", 18)
+maria = EstudianteDeportista(16, 12345678, "secundaria", "voleibol")
+pedro = EstudianteNota(15, 87654321, "secundaria", 18)
 
 maria.club()
 maria.entrenar()
