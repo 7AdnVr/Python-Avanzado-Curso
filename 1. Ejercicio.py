@@ -15,3 +15,22 @@ juan = Estudiante(10, 32054345, año="primer")
 
 marcelo.mostrar_info()
 juan.mostrar_info()
+
+class EstudianteDeportista(Estudiante):
+
+    def __init__(self, edad, cedula, año="desconocido", deporte="desconocido"):
+        super().__init__(edad, cedula, año)
+        self.deporte = deporte
+
+    def club(self):
+        print(f"Estoy en el club deportivo de -> {self.deporte}.")
+
+class EstudianteNota(Estudiante):
+
+    def __init__(self, edad, cedula, año="desconocido", nota="desconocido"):
+        super().__init__(edad, cedula, año)
+        self.nota = nota
+
+    def calificacion(self):
+        print(f"Mi promedio es -> {self.nota}")
+
