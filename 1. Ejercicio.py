@@ -25,6 +25,9 @@ class EstudianteDeportista(Estudiante):
     def club(self):
         print(f"Estoy en el club deportivo de -> {self.deporte}.")
 
+    def entrenar(self):
+        print(f"Estoy entrenando -> {self.deporte}.")
+
 class EstudianteNota(Estudiante):
 
     def __init__(self, edad, cedula, año="desconocido", nota="desconocido"):
@@ -34,3 +37,14 @@ class EstudianteNota(Estudiante):
     def calificacion(self):
         print(f"Mi promedio es -> {self.nota}")
 
+    def estudiar(self):
+        print("Estoy estudiando para mejorar mi nota.")
+
+maria = EstudianteDeportista(16, 12345678, "4to año", "voleibol")
+pedro = EstudianteNota(15, 87654321, "3er año", 18)
+
+maria.club()
+maria.entrenar()
+
+pedro.calificacion()
+pedro.estudiar()
