@@ -1,6 +1,6 @@
 class Paquete:
 
-    def init(self, id, volumen, fragil):
+    def __init__(self, id, volumen, fragil):
         self.id = id
         self.volumen = volumen
         self.fragil = fragil

@@ -1,6 +1,6 @@
 class Evento:
 
-    def init(self, nombre, capacidad, invitados):
+    def __init__(self, nombre, capacidad, invitados):
         self.nombre = nombre
         self.capacidad = capacidad
         self.invitados = invitados

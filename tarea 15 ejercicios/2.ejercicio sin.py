@@ -1,6 +1,6 @@
 class Guerrero:
 
-    def init(self, vida, ataque, defensa, estados):
+    def __init__(self, vida, ataque, defensa, estados):
         self.vida = vida
         self.ataque = ataque
         self.defensa = defensa

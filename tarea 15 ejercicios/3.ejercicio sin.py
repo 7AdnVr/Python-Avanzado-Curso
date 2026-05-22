@@ -1,6 +1,6 @@
 class Equipo:
 
-    def init(self, nombre, puntos):
+    def __init__(self, nombre, puntos):
         self.nombre = nombre
         self.puntos = puntos
 
